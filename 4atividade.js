@@ -2,6 +2,8 @@
 // A função deve calcular o IMC e retornar uma string com a classificação: • IMC < 18.5: "Abaixo do peso"
 //• IMC entre 18.5 e 24.9: "Peso normal"; • IMC ≥ 25.0: "Sobrepeso"
 
+//Resolução da questão: fiz uma função que pede a altura e o peso, depois calcula o IMC e retorna por um if dizendo se o peso está baixo, normal ou acima.
+//Eu achei uma questão média, pois deu muito erro e foi dificil saber onde estava este erro.
 
 function calcularIMC(){
     let peso = Number(prompt("Digite o valor do peso"))
