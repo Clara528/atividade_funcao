@@ -6,6 +6,17 @@
 // solicita via prompt o cadastro de 4 alunos (armazenando-os num array de objetos), chama 
 // contarAprovados e exibe o total de aprovados no console.log.
 
+//Resolução da questão: fiz um programa com três funções que trabalham juntas para analisar uma turma. A primeira, verificarAprovacao,
+//recebe a nota de um aluno e retorna true se ela for maior ou igual a 60 e false caso contrário, usando apenas uma comparação. A segunda,
+//contarAprovados, recebe um array de objetos (cada objeto é um aluno com nome e nota), cria um contador começando em 0 e percorre a lista 
+//com um for. Em cada volta, ela chama verificarAprovacao passando a nota do aluno atual (listaAlunos[i].nota) e, se o resultado for true, 
+//soma 1 no contador. No final, retorna o total de aprovados. A terceira, executarAnalise, é a função principal: ela cria um array vazio, 
+//repete 4 vezes pedindo com prompt o nome e a nota de cada aluno, converte a nota com Number() e guarda tudo como objeto no array usando push. 
+//Depois chama contarAprovados com esse array e mostra o total de aprovados ao usuário. Por fim, chamei executarAnalise() no final do código para o
+//programa rodar. Eu achei uma questão díficil, pois envolveu várias partes ao mesmo tempo: funções que chamam outras funções, array de objetos, laços
+// de repetição e entrada de dados. O mais importante foi entender que cada função tem uma responsabilidade só e que uma depende da outra, então precisei
+//prestar atenção na ordem e nos nomes das propriedades (nome e nota) para acessar o valor certo dentro de cada objeto.
+
 function verificarAprovacao(nota) {
   return nota >= 60;
 }
