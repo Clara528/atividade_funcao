@@ -1,6 +1,7 @@
 //5. Crie uma função chamada somarElementos que receba um array de números 
 //como parâmetro, percorra o vetor, some todos os valores e retorne o total.
 
+//resolução da questão:
 function somarElementos(numeros){
 let soma = 0
 
