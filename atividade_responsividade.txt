@@ -1,0 +1,58 @@
+1. É importante nos atentarmos ao SEO no momento de criação do site para que ele possa ser encontrado mais facilmente pelos motores de busca. Pesquise e cite algumas táticas para ajudar o site a ser melhor ranqueado
+pelo SEO, com referencias reais.
+
+O SEO (Search Engine Optimization) engloba otimizações técnicas, estruturais e de conteúdo. Algumas das principais táticas comprovadas incluem: Otimização de Velocidade e Experiência de Usuário: 
+O Google utiliza as métricas Core Web Vitals (como LCP, INP e CLS) como fator direto de ranqueamento, priorizando sites rápidos e que carregam sem oscilações visuais.
+
+Pesquisa de Palavras-Chave e Intenção de Busca: Identificar os termos que o público busca e alinhar o conteúdo à intenção exata da pesquisa (informacional, navegacional ou transacional).
+
+Uso Adequado de Tags H1, H2 e Tag Title: Organizar a estrutura hierárquica do HTML utilizando títulos claros e otimizados, além de descrições adequadas na <head>.
+
+Responsividade e Design Mobile-First: Como o Google utiliza a indexação orientada para dispositivos móveis (Mobile-First Indexing), sites bem adaptados a telas menores ranqueiam substancialmente melhor.
+
+Construção de Autoridade via Backlinks (Off-Page SEO): Obter links de sites respeitáveis apontando para as suas páginas sinaliza relevância e confiança para os mecanismos de busca.
+
+2. O framework que seu grupo apresentou no seminário,possibilita o desenvolvimento responsivo? Quais elementos ele disponibiliza para que isso seja possível?
+
+O framework Bulma possibilita e prioriza o desenvolvimento responsivo, pois é projetado nativamente com a filosofia Mobile-First baseada em CSS Flexbox.
+
+Os principais elementos e recursos que o Bulma disponibiliza para garantir a responsividade são:
+
+Sistema de Grid Flexível (.columns e .column): As colunas no Bulma se adaptam automaticamente à largura da tela. É possível definir tamanhos específicos por ponto de interrupção (breakpoints) usando classes como .is-half-mobile, .is-one-third-tablet ou .is-one-quarter-desktop.
+
+Breakpoints Nativos em CSS: O Bulma define limiares claros para diferentes telas:
+
+mobile: até 768px
+
+tablet: de 769px em diante
+
+desktop: de 1024px em diante
+
+widescreen: de 1216px em diante
+
+fullhd: de 1408px em diante
+
+Classes Utilitárias de Visibilidade: Permitem mostrar ou ocultar elementos conforme o tamanho do dispositivo, como .is-hidden-mobile, .is-hidden-touch ou .is-only-tablet.
+
+Componentes Responsivos Pré-Construídos:
+
+navbar-burger: O menu de navegação do Bulma transforma-se automaticamente em um menu do tipo "hambúrguer" em telas menores.
+
+level: Alinha elementos na horizontal no desktop e empilha-os na vertical em telas móveis.
+
+3. Procure um site que você acessa e faça uma crítica relacionada a sua responsividade, com base nos tópicos debatidos.
+
+Pontos Fortes:
+
+Menu e Navegação Adaptativos: Em telas desktop, a barra de navegação superior exibe atalhos para repositórios, pesquisas, notificações e perfil. Em dispositivos móveis, a interface é simplificada por meio de um menu sanfona/hambúrguer, liberando espaço útil para leitura de código.
+
+Layout da Página de Repositório: Em telas grandes, a barra lateral (About, Contributors, Releases) fica à direita do conteúdo de arquivos. Em dispositivos móveis, o Bulma/Flexbox reordena os blocos empilhando a barra lateral ao final, mantendo o código e o arquivo README.md visíveis em primeiro lugar.
+
+Ajuste de Tipografia e Tabelas: As listas de commits e arquivos usam rolagem horizontal quando a tabela excede a largura da tela móvel, impedindo a quebra de layout (overflow horizontal indesejado).
+
+Pontos de Atenção / Melhoria:
+
+Visualização de Códigos em Telas Pequenas: Para arquivos com linhas de código muito longas, a visualização mobile exige rolagem horizontal dentro do bloco de código. Embora funcional, reduz a legibilidade se comparado ao uso em telas widescreen.
+
+Diffs de Pull Requests em Celulares: A comparação de código lado a lado (Split View) em telas móveis torna-se inviável, forçando o uso do modo unificado (Unified View).
+
